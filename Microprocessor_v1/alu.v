@@ -29,6 +29,7 @@ reg cs0,cs1,cs2,rdy;
 wire cin,rdy_add,rdy_mul,rdy_log;
 integer state=0;
 
+
 //instantiation
 add_sub alu_add(clk,out,cout,A,B,op[0],op[0],cs0,rdy_add);
 mul alu_mul(clk,out,A,B,cs1,rdy_mul);
